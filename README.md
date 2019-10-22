@@ -1,7 +1,7 @@
 # About
 
 This repo contains Docker files to build container for squid 3 running on
-Debian 8.
+Debian 8. In addition, sample user is created: `user1:pass1`.
 
 There is a helper makefile to build docker image and container locally
 ```bash
@@ -18,5 +18,5 @@ $ make viewlogs
 
 Test it with:
 ```bash
-$ curl --proxy localhost:3128 https://httpbin.org/ip -v
+$ curl --proxy user1:pass1@localhost:3128 https://httpbin.org/ip -v
 ```
