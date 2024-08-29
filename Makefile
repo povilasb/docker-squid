@@ -13,4 +13,4 @@ container:
 
 .PHONY: viewlogs
 viewlogs:
-	docker exec -it $(container) tail -f /var/log/squid3/access.log
+	docker exec -it $(container) tail -f /var/log/squid/access.log
